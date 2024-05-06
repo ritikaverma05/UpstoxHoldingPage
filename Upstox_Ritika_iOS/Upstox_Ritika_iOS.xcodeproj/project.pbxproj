@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D2BD6D62B9F7FE0006716EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6D52B9F7FE0006716EF /* AppDelegate.swift */; };
+		0D2BD6D82B9F7FE0006716EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6D72B9F7FE0006716EF /* SceneDelegate.swift */; };
+		0D2BD6DA2B9F7FE0006716EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6D92B9F7FE0006716EF /* ViewController.swift */; };
+		0D2BD6DD2B9F7FE0006716EF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BD6DC2B9F7FE0006716EF /* Base */; };
+		0D2BD6DF2B9F7FE1006716EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BD6DE2B9F7FE1006716EF /* Assets.xcassets */; };
+		0D2BD6E22B9F7FE1006716EF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D2BD6E12B9F7FE1006716EF /* Base */; };
+		0D2BD6EE2B9F83A8006716EF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6ED2B9F83A8006716EF /* ViewModel.swift */; };
+		0D2BD6F02B9F84D2006716EF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6EF2B9F84D2006716EF /* NetworkManager.swift */; };
+		0D2BD6F22B9F8511006716EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BD6F12B9F8511006716EF /* Model.swift */; };
+		0DBAE0D52BA5A7E900BC8DD4 /* StocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAE0D32BA5A7E900BC8DD4 /* StocksTableViewCell.swift */; };
+		0DBAE0D62BA5A7E900BC8DD4 /* StocksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DBAE0D42BA5A7E900BC8DD4 /* StocksTableViewCell.xib */; };
+		0DBAE0DF2BA5CC3E00BC8DD4 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAE0DE2BA5CC3E00BC8DD4 /* Double+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D2BD6D22B9F7FE0006716EF /* Upstox_Ritika_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upstox_Ritika_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2BD6D52B9F7FE0006716EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D2BD6D72B9F7FE0006716EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0D2BD6D92B9F7FE0006716EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D2BD6DC2B9F7FE0006716EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D2BD6DE2B9F7FE1006716EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D2BD6E12B9F7FE1006716EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D2BD6E32B9F7FE1006716EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2BD6ED2B9F83A8006716EF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0D2BD6EF2B9F84D2006716EF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0D2BD6F12B9F8511006716EF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0DBAE0D32BA5A7E900BC8DD4 /* StocksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewCell.swift; sourceTree = "<group>"; };
+		0DBAE0D42BA5A7E900BC8DD4 /* StocksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksTableViewCell.xib; sourceTree = "<group>"; };
+		0DBAE0DE2BA5CC3E00BC8DD4 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D2BD6CF2B9F7FE0006716EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D2BD6C92B9F7FE0006716EF = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6D42B9F7FE0006716EF /* Upstox_Ritika_iOS */,
+				0D2BD6D32B9F7FE0006716EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D2BD6D32B9F7FE0006716EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6D22B9F7FE0006716EF /* Upstox_Ritika_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D2BD6D42B9F7FE0006716EF /* Upstox_Ritika_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAE0D92BA5CB8A00BC8DD4 /* Model */,
+				0DBAE0DC2BA5CBC700BC8DD4 /* ViewController */,
+				0DBAE0DA2BA5CB9500BC8DD4 /* ViewModel */,
+				0DBAE0DD2BA5CBD600BC8DD4 /* Cell */,
+				0DBAE0DB2BA5CBB700BC8DD4 /* NetworkManager */,
+				0DBAE0D82BA5CB7400BC8DD4 /* Resources */,
+				0DBAE0D72BA5CB3F00BC8DD4 /* Storyboard */,
+				0D2BD6E32B9F7FE1006716EF /* Info.plist */,
+			);
+			path = Upstox_Ritika_iOS;
+			sourceTree = "<group>";
+		};
+		0DBAE0D72BA5CB3F00BC8DD4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6E02B9F7FE1006716EF /* LaunchScreen.storyboard */,
+				0D2BD6DB2B9F7FE0006716EF /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0DBAE0D82BA5CB7400BC8DD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6D52B9F7FE0006716EF /* AppDelegate.swift */,
+				0D2BD6D72B9F7FE0006716EF /* SceneDelegate.swift */,
+				0D2BD6DE2B9F7FE1006716EF /* Assets.xcassets */,
+				0DBAE0DE2BA5CC3E00BC8DD4 /* Double+Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DBAE0D92BA5CB8A00BC8DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6F12B9F8511006716EF /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DBAE0DA2BA5CB9500BC8DD4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6ED2B9F83A8006716EF /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DBAE0DB2BA5CBB700BC8DD4 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6EF2B9F84D2006716EF /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		0DBAE0DC2BA5CBC700BC8DD4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D2BD6D92B9F7FE0006716EF /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0DBAE0DD2BA5CBD600BC8DD4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAE0D32BA5A7E900BC8DD4 /* StocksTableViewCell.swift */,
+				0DBAE0D42BA5A7E900BC8DD4 /* StocksTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D2BD6D12B9F7FE0006716EF /* Upstox_Ritika_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D2BD6E62B9F7FE1006716EF /* Build configuration list for PBXNativeTarget "Upstox_Ritika_iOS" */;
+			buildPhases = (
+				0D2BD6CE2B9F7FE0006716EF /* Sources */,
+				0D2BD6CF2B9F7FE0006716EF /* Frameworks */,
+				0D2BD6D02B9F7FE0006716EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Upstox_Ritika_iOS;
+			productName = Upstox_Ritika_iOS;
+			productReference = 0D2BD6D22B9F7FE0006716EF /* Upstox_Ritika_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D2BD6CA2B9F7FE0006716EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0D2BD6D12B9F7FE0006716EF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 0D2BD6CD2B9F7FE0006716EF /* Build configuration list for PBXProject "Upstox_Ritika_iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D2BD6C92B9F7FE0006716EF;
+			productRefGroup = 0D2BD6D32B9F7FE0006716EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D2BD6D12B9F7FE0006716EF /* Upstox_Ritika_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D2BD6D02B9F7FE0006716EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2BD6DF2B9F7FE1006716EF /* Assets.xcassets in Resources */,
+				0D2BD6E22B9F7FE1006716EF /* Base in Resources */,
+				0DBAE0D62BA5A7E900BC8DD4 /* StocksTableViewCell.xib in Resources */,
+				0D2BD6DD2B9F7FE0006716EF /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D2BD6CE2B9F7FE0006716EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D2BD6F22B9F8511006716EF /* Model.swift in Sources */,
+				0D2BD6F02B9F84D2006716EF /* NetworkManager.swift in Sources */,
+				0D2BD6EE2B9F83A8006716EF /* ViewModel.swift in Sources */,
+				0D2BD6DA2B9F7FE0006716EF /* ViewController.swift in Sources */,
+				0DBAE0DF2BA5CC3E00BC8DD4 /* Double+Extension.swift in Sources */,
+				0D2BD6D62B9F7FE0006716EF /* AppDelegate.swift in Sources */,
+				0D2BD6D82B9F7FE0006716EF /* SceneDelegate.swift in Sources */,
+				0DBAE0D52BA5A7E900BC8DD4 /* StocksTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0D2BD6DB2B9F7FE0006716EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D2BD6DC2B9F7FE0006716EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D2BD6E02B9F7FE1006716EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D2BD6E12B9F7FE1006716EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D2BD6E42B9F7FE1006716EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D2BD6E52B9F7FE1006716EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D2BD6E72B9F7FE1006716EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Upstox_Ritika_iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Upstox-Ritika-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D2BD6E82B9F7FE1006716EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Upstox_Ritika_iOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.Upstox-Ritika-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D2BD6CD2B9F7FE0006716EF /* Build configuration list for PBXProject "Upstox_Ritika_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2BD6E42B9F7FE1006716EF /* Debug */,
+				0D2BD6E52B9F7FE1006716EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D2BD6E62B9F7FE1006716EF /* Build configuration list for PBXNativeTarget "Upstox_Ritika_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D2BD6E72B9F7FE1006716EF /* Debug */,
+				0D2BD6E82B9F7FE1006716EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D2BD6CA2B9F7FE0006716EF /* Project object */;
+}
